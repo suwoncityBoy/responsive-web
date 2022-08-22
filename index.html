@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HakkyoungTube</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/nav.css">
@@ -22,32 +23,77 @@
         <span class="header__title">HakkyoungTube</span>
       </h1>
       <div class="header__center">
-        <form class="header__form" onsubmit="return false;"> 
-          <input class="header__input--text" placeholder="보고싶은 동영상을 입력하세요!">
+        <form class="header__form" onsubmit="return false;">
+          <input class="header__input--text" placeholder="검색">
           <button class="header__input--button">검색</button>
+          <div class="header__search">
+            <span class="material-icons">
+              search
+            </span>
+          </div>
+          <div class="header__mic">
+            <span class="material-icons">
+              mic
+            </span>
+          </div>
         </form>
       </div>
       <div class="header__end">
-        <button class="header__search">&#128269;</button>
+        <div class="header__notifications">
+          <span class="material-icons">
+            notifications_none
+          </span>
+        </div>
         <div class="header__profile"></div>
       </div>
-    </div>  
+    </div>
   </header>
 
   <!-- nav -->
   <nav class="nav">
     <ul class="nav__wrapper">
       <li>
-        <button class="nav__icon">&#9829;</button>
-        <button class="nav__menu">메뉴항목</button>
+        <span class="material-icons">
+          home
+        </span>
+        <button class="nav__menu">홈</button>
       </li>
       <li>
-        <button class="nav__icon">&#9829;</button>
-        <button class="nav__menu">메뉴항목</button>
+        <span class="material-icons">
+          explore
+        </span>
+        <button class="nav__menu">탐색</button>
       </li>
       <li>
-        <button class="nav__icon">&#9829;</button>
-        <button class="nav__menu">메뉴항목</button>
+        <span class="material-icons">
+          subscriptions
+        </span>          
+        <button class="nav__menu">구독</button>
+      </li>
+      <div class="border"></div>
+      <li>
+        <span class="material-icons">
+          video_library
+        </span>          
+        <button class="nav__menu">보관함</button>
+      </li>
+      <li>
+        <span class="material-icons">
+          watch_later
+        </span>          
+        <button class="nav__menu">나중에 볼 동영상</button>
+      </li>
+      <li>
+        <span class="material-icons">
+          thumb_up
+        </span>          
+        <button class="nav__menu">좋아요 누른 동영상</button>
+      </li>
+      <li>
+        <span class="material-icons">
+          smart_display
+        </span>          
+        <button class="nav__menu">내 동영상</button>
       </li>
     </ul>
   </nav>
@@ -56,124 +102,134 @@
   <section class="thumbs">
     <div class="thumbs__wrapper">
       <div class="thumbs__item">
-        <img src="./images/mimi002.jpg" class="thumbs__thumbnail">
+        <img src="./images/코딩알려주는누나.PNG" class="thumbs__thumbnail">
         <div class="thumbs__info">
           <div class="thumbs__profile"></div>
           <div class="thumbs__text">
-            <h3 class="thumbs__text--title">영상 제목</h3>
-            <p class="thumbs__text--owner">게시자</p>
-            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간전</p>
+            <h3 class="thumbs__text--title">코딩으로 게임만들기</h3>
+            <p class="thumbs__text--owner">코딩알려주는 누나</p>
+            <p class="thumbs__text--anal">조회수 30만회 &#183; 1년 전</p>
           </div>
         </div>
       </div>
       <div class="thumbs__item">
-        <img src="./images/mimi002.jpg" class="thumbs__thumbnail">
+        <img src="./images/짤툰.PNG" class="thumbs__thumbnail">
         <div class="thumbs__info">
           <div class="thumbs__profile"></div>
           <div class="thumbs__text">
-            <h3 class="thumbs__text--title">영상 제목</h3>
-            <p class="thumbs__text--owner">게시자</p>
-            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간전</p>
+            <h3 class="thumbs__text--title">[생존일기] 만남</h3>
+            <p class="thumbs__text--owner">짤툰</p>
+            <p class="thumbs__text--anal">조회수 1만회 &#183; 4시간 전</p>
           </div>
         </div>
-      </div><div class="thumbs__item">
-        <img src="./images/mimi002.jpg" class="thumbs__thumbnail">
+      </div>
+      <div class="thumbs__item">
+        <img src="./images/ㅂㅂ.PNG" class="thumbs__thumbnail">
         <div class="thumbs__info">
           <div class="thumbs__profile"></div>
           <div class="thumbs__text">
-            <h3 class="thumbs__text--title">영상 제목</h3>
-            <p class="thumbs__text--owner">게시자</p>
-            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간전</p>
+            <h3 class="thumbs__text--title">3기 26화 할아버지 저금통</h3>
+            <p class="thumbs__text--owner">jin angel</p>
+            <p class="thumbs__text--anal">조회수 56만회 &#183; 3개월 전</p>
           </div>
         </div>
-      </div><div class="thumbs__item">
-        <img src="./images/mimi002.jpg" class="thumbs__thumbnail">
+      </div>
+      <div class="thumbs__item">
+        <img src="./images/ㅊㅊㅊㅊㅊ.PNG" class="thumbs__thumbnail">
         <div class="thumbs__info">
           <div class="thumbs__profile"></div>
           <div class="thumbs__text">
-            <h3 class="thumbs__text--title">영상 제목</h3>
-            <p class="thumbs__text--owner">게시자</p>
-            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간전</p>
+            <h3 class="thumbs__text--title">코딩할때 듣는 음악</h3>
+            <p class="thumbs__text--owner">Lofi 코딩</p>
+            <p class="thumbs__text--anal">조회수 3.6만회 &#183; 2일 전</p>
           </div>
         </div>
-      </div><div class="thumbs__item">
-        <img src="./images/mimi002.jpg" class="thumbs__thumbnail">
+      </div>
+      <div class="thumbs__item">
+        <img src="./images/c.PNG" class="thumbs__thumbnail">
         <div class="thumbs__info">
           <div class="thumbs__profile"></div>
           <div class="thumbs__text">
-            <h3 class="thumbs__text--title">영상 제목</h3>
-            <p class="thumbs__text--owner">게시자</p>
-            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간전</p>
+            <h3 class="thumbs__text--title">c언어 무료 강의</h3>
+            <p class="thumbs__text--owner">나도코딩</p>
+            <p class="thumbs__text--anal">조회수 40만회 &#183; 3주 전</p>
           </div>
         </div>
-      </div><div class="thumbs__item">
-        <img src="./images/mimi002.jpg" class="thumbs__thumbnail">
+      </div>
+      <div class="thumbs__item">
+        <img src="./images/hhhhhhhh.PNG" class="thumbs__thumbnail">
         <div class="thumbs__info">
           <div class="thumbs__profile"></div>
           <div class="thumbs__text">
-            <h3 class="thumbs__text--title">영상 제목</h3>
-            <p class="thumbs__text--owner">게시자</p>
-            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간전</p>
+            <h3 class="thumbs__text--title">Node.js 개발자 채용공고 떳다!</h3>
+            <p class="thumbs__text--owner">큰돌의터전</p>
+            <p class="thumbs__text--anal">조회수 100만회 &#183; 4개월 전</p>
           </div>
         </div>
-      </div><div class="thumbs__item">
-        <img src="./images/mimi002.jpg" class="thumbs__thumbnail">
+      </div>
+      <div class="thumbs__item">
+        <img src="./images/mmm.PNG" class="thumbs__thumbnail">
         <div class="thumbs__info">
           <div class="thumbs__profile"></div>
           <div class="thumbs__text">
-            <h3 class="thumbs__text--title">영상 제목</h3>
-            <p class="thumbs__text--owner">게시자</p>
-            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간전</p>
+            <h3 class="thumbs__text--title">공부하고 집중할때 듣는 음악</h3>
+            <p class="thumbs__text--owner">Lofi 코딩</p>
+            <p class="thumbs__text--anal">조회수 30만회 &#183; 2주 전</p>
           </div>
         </div>
-      </div><div class="thumbs__item">
-        <img src="./images/mimi002.jpg" class="thumbs__thumbnail">
+      </div>
+      <div class="thumbs__item">
+        <img src="./images/j.PNG" class="thumbs__thumbnail">
         <div class="thumbs__info">
           <div class="thumbs__profile"></div>
           <div class="thumbs__text">
-            <h3 class="thumbs__text--title">영상 제목</h3>
-            <p class="thumbs__text--owner">게시자</p>
-            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간전</p>
+            <h3 class="thumbs__text--title">이런사람은 코딩 배워도 실패합니다.</h3>
+            <p class="thumbs__text--owner">장코딩</p>
+            <p class="thumbs__text--anal">조회수 521만회 &#183; 1년 전</p>
           </div>
         </div>
-      </div><div class="thumbs__item">
-        <img src="./images/mimi002.jpg" class="thumbs__thumbnail">
+      </div>
+      <div class="thumbs__item">
+        <img src="./images/q.PNG" class="thumbs__thumbnail">
         <div class="thumbs__info">
           <div class="thumbs__profile"></div>
           <div class="thumbs__text">
-            <h3 class="thumbs__text--title">영상 제목</h3>
-            <p class="thumbs__text--owner">게시자</p>
-            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간전</p>
+            <h3 class="thumbs__text--title">코딩, 어떤 언어부터 배워야하나?</h3>
+            <p class="thumbs__text--owner">노마드 코더</p>
+            <p class="thumbs__text--anal">조회수 4.5만회 &#183; 11개월 전</p>
           </div>
         </div>
-      </div><div class="thumbs__item">
-        <img src="./images/mimi002.jpg" class="thumbs__thumbnail">
+      </div>
+      <div class="thumbs__item">
+        <img src="./images/dddddddddddddddddddddd.PNG" class="thumbs__thumbnail">
         <div class="thumbs__info">
           <div class="thumbs__profile"></div>
           <div class="thumbs__text">
-            <h3 class="thumbs__text--title">영상 제목</h3>
-            <p class="thumbs__text--owner">게시자</p>
-            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간전</p>
+            <h3 class="thumbs__text--title">과제할때 듣기 좋은음악</h3>
+            <p class="thumbs__text--owner">인프런</p>
+            <p class="thumbs__text--anal">조회수 7.2만회 &#183; 9개월 전</p>
           </div>
         </div>
-      </div><div class="thumbs__item">
-        <img src="./images/mimi002.jpg" class="thumbs__thumbnail">
+      </div>
+      <div class="thumbs__item">
+        <img src="./images/qnfrdmsehowl.PNG" class="thumbs__thumbnail">
         <div class="thumbs__info">
           <div class="thumbs__profile"></div>
           <div class="thumbs__text">
-            <h3 class="thumbs__text--title">영상 제목</h3>
-            <p class="thumbs__text--owner">게시자</p>
-            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간전</p>
+            <h3 class="thumbs__text--title">붉은돼지 ost</h3>
+            <p class="thumbs__text--owner">맑은파란하늘</p>
+            <p class="thumbs__text--anal">조회수 10만회 &#183; 3개월 전</p>
           </div>
         </div>
-      </div><div class="thumbs__item">
-        <img src="./images/mimi002.jpg" class="thumbs__thumbnail">
+      </div>
+      <div class="thumbs__item">
+        <img src="./images/jazzz.PNG" class="thumbs__thumbnail">
         <div class="thumbs__info">
           <div class="thumbs__profile"></div>
           <div class="thumbs__text">
-            <h3 class="thumbs__text--title">영상 제목</h3>
-            <p class="thumbs__text--owner">게시자</p>
-            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간전</p>
+            <h3 class="thumbs__text--title">재즈음악 모음</h3>
+            <p class="thumbs__text--owner">blue rain</p>
+            <p class="thumbs__text--anal">조회수 1.5만회 &#183; 6시간 전</p>
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-.header{
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -7,37 +7,43 @@
   box-shadow: 0 0 3px #000;
   z-index: 20;
 }
-.header__wrapper{
+
+.header__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 60px;
   padding: 0 16px;
 }
-.header__start{
+
+.header__start {
   height: 40px;
   line-height: 40px;
 }
-.header__hamburger{
+
+.header__hamburger {
   cursor: pointer;
   border: none;
   background-color: transparent;
   font-size: 1.5rem;
 }
-.header__title{
+
+.header__title {
   cursor: pointer;
   font-size: 1.2rem;
   margin-left: 6px;
 }
 
-.header__center{
+.header__center {
   width: 50%;
 }
-.header__form{
+
+.header__form {
   display: flex;
   max-width: 100%;
 }
-.header__input--text{
+
+.header__input--text {
   width: calc(100% - 60px);
   height: 40px;
   padding: 0 6px;
@@ -45,7 +51,9 @@
   border-right: none;
   border-radius: 2px 0 0 2px;
 }
-.header__input--button{
+
+.header__input--button {
+  margin-right: 10px;
   width: 60px;
   height: 40px;
   border: 1px solid #8f8f8f;
@@ -53,19 +61,37 @@
   border-radius: 0 2px 2px 0;
 }
 
-.header__end{
+.header__input--button:hover {
+  cursor: pointer;
+  background-color: #9f9f9f;
+}
+
+.header__search {
+  padding: 5px 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.header__mic {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 5px;
+}
+
+.header__end {
   display: flex;
 }
 
-.header__search{
-  cursor: pointer;
-  display: none;
+.header__notifications {
+  display: flex;
+  align-items: center;
+  padding: 5px 5px;
   margin-right: 5px;
-  border: none;
-  background-color: transparent;
-  font-size: 1.5rem;
+  cursor: pointer;
 }
-.header__profile{
+
+.header__profile {
   cursor: pointer;
   width: 40px;
   height: 40px;
@@ -76,17 +102,28 @@
   background-size: 40px 40px;
 }
 
-@media screen and (max-width: 800px){
-  .header__title{
+@media screen and (max-width: 800px) {
+  .header__title {
     display: none;
   }
 }
 
-@media screen and (max-width: 400px){
-  .header__center{
+@media screen and (max-width: 400px) {
+
+  .header__input--text,
+  .header__input--button {
     display: none;
   }
-  .header__search{
+
+  .header__search {
     display: block;
   }
+}
+
+@media screen and (max-width: 200px) {
+  .header__notifications,
+  .header__mic {
+    display: none;
+  }
+
 }
